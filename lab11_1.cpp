@@ -1,21 +1,22 @@
 #include<iostream>
 using namespace std;
 
-long int fibonacci(long int);
+long long int fibonacci(long long int);
 
 int main(){
-    long int x;
-    cin >> x;
-    cout << fibonacci(3);
+
+    cout << fibonacci(50);
+
     return 0; 
+
 }
 
-long int fibonacci(long int x)
+long long int fibonacci(long long int x)
 {
     switch (x)
     {
-    case 0: return 0;
-    case 1: return 1;
-    default: return fibonacci(x-1) + fibonacci(x-2);
+        case 0: return 0;
+        case 1: return 1;
+        default: return fibonacci(x-1) + fibonacci(x-2);
     }
 }
